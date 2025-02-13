@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F6865E0E2D5C427B0006E590 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = F6865E0D2D5C427B0006E590 /* OpenAI */; };
+		F6FB74DE2D5C1914001F77F7 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = F6FB74DD2D5C1914001F77F7 /* OpenAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F6FB74C02D5AE899001F77F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,22 @@
 		F6FB74C92D5AE899001F77F7 /* HERMESMark1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HERMESMark1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F6FB74FE2D5C2DED001F77F7 /* Exceptions for "HERMESMark1" folder in "HERMESMark1" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F6FB74AE2D5AE896001F77F7 /* HERMESMark1 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F6FB74B12D5AE896001F77F7 /* HERMESMark1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F6FB74FE2D5C2DED001F77F7 /* Exceptions for "HERMESMark1" folder in "HERMESMark1" target */,
+			);
 			path = HERMESMark1;
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FB74DE2D5C1914001F77F7 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6865E0E2D5C427B0006E590 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +132,7 @@
 			);
 			name = HERMESMark1;
 			packageProductDependencies = (
+				F6FB74DD2D5C1914001F77F7 /* OpenAI */,
 			);
 			productName = HERMESMark1;
 			productReference = F6FB74AF2D5AE896001F77F7 /* HERMESMark1.app */;
@@ -135,6 +156,7 @@
 			);
 			name = HERMESMark1Tests;
 			packageProductDependencies = (
+				F6865E0D2D5C427B0006E590 /* OpenAI */,
 			);
 			productName = HERMESMark1Tests;
 			productReference = F6FB74BF2D5AE899001F77F7 /* HERMESMark1Tests.xctest */;
@@ -195,6 +217,9 @@
 			);
 			mainGroup = F6FB74A62D5AE896001F77F7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F6FB74DC2D5C189A001F77F7 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F6FB74B02D5AE896001F77F7 /* Products */;
 			projectDirPath = "";
@@ -399,6 +424,7 @@
 				DEVELOPMENT_TEAM = CFV9N227P7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HERMESMark1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +454,7 @@
 				DEVELOPMENT_TEAM = CFV9N227P7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HERMESMark1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +585,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6FB74DC2D5C189A001F77F7 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6865E0D2D5C427B0006E590 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6FB74DC2D5C189A001F77F7 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		F6FB74DD2D5C1914001F77F7 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6FB74DC2D5C189A001F77F7 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6FB74A72D5AE896001F77F7 /* Project object */;
 }
